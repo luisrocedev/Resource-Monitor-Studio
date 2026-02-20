@@ -23,24 +23,24 @@
 
 ## Características principales
 
-| Característica | Detalle |
-|---|---|
-| **Muestreo periódico** | Thread daemon con intervalo configurable (0.5 – 60 s) |
-| **Métricas** | CPU % · RAM % · Disco % · Espacio libre · Red TX/RX · Procesos activos |
-| **Alertas automáticas** | Reglas warning/critical con umbral, trazabilidad y persistencia |
-| **API REST** | `/api/stats` · `/api/series` · `/api/rollup` · `/api/alerts` · `/api/control` |
-| **Rollup** | Promedios agregados por hora o por día |
-| **Dashboard** | 3 pestañas: Dashboard · Alertas · Control |
-| **KPI strip** | 6 indicadores con borde lateral semántico (azul, cian, verde, ámbar, violeta, rojo) |
-| **Dark mode** | Toggle manual + `prefers-color-scheme` + Chart.js adaptativo |
-| **Toasts** | Notificaciones contextuales: success · error · info · warning |
-| **Confirm personalizado** | Overlay con `backdrop-filter` en lugar de `confirm()` nativo |
-| **Export / Import** | JSON con stats + series + alertas · Importación con validación |
-| **Pills de severidad** | `sev-warning` (ámbar) · `sev-critical` (rojo) |
-| **Filtros de alertas** | Búsqueda textual + selector de severidad en memoria |
-| **Indicador de estado** | Punto animado (`pulse`) verde/ámbar con texto descriptivo |
-| **Gráficas mejoradas** | `fill: true`, ejes adaptativos, `maxTicksLimit` |
-| **Responsive** | 3 breakpoints: escritorio (6 col KPI) · tablet (3 col) · móvil (2 col) |
+| Característica            | Detalle                                                                             |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| **Muestreo periódico**    | Thread daemon con intervalo configurable (0.5 – 60 s)                               |
+| **Métricas**              | CPU % · RAM % · Disco % · Espacio libre · Red TX/RX · Procesos activos              |
+| **Alertas automáticas**   | Reglas warning/critical con umbral, trazabilidad y persistencia                     |
+| **API REST**              | `/api/stats` · `/api/series` · `/api/rollup` · `/api/alerts` · `/api/control`       |
+| **Rollup**                | Promedios agregados por hora o por día                                              |
+| **Dashboard**             | 3 pestañas: Dashboard · Alertas · Control                                           |
+| **KPI strip**             | 6 indicadores con borde lateral semántico (azul, cian, verde, ámbar, violeta, rojo) |
+| **Dark mode**             | Toggle manual + `prefers-color-scheme` + Chart.js adaptativo                        |
+| **Toasts**                | Notificaciones contextuales: success · error · info · warning                       |
+| **Confirm personalizado** | Overlay con `backdrop-filter` en lugar de `confirm()` nativo                        |
+| **Export / Import**       | JSON con stats + series + alertas · Importación con validación                      |
+| **Pills de severidad**    | `sev-warning` (ámbar) · `sev-critical` (rojo)                                       |
+| **Filtros de alertas**    | Búsqueda textual + selector de severidad en memoria                                 |
+| **Indicador de estado**   | Punto animado (`pulse`) verde/ámbar con texto descriptivo                           |
+| **Gráficas mejoradas**    | `fill: true`, ejes adaptativos, `maxTicksLimit`                                     |
+| **Responsive**            | 3 breakpoints: escritorio (6 col KPI) · tablet (3 col) · móvil (2 col)              |
 
 ---
 
@@ -127,13 +127,13 @@ Resource-Monitor-Studio/
 
 ## API REST
 
-| Método | Endpoint | Descripción |
-|---|---|---|
-| `GET` | `/api/stats` | Estado global: muestras totales, alertas, última métrica, runtime |
-| `GET` | `/api/series?limit=N` | Serie temporal de métricas (últimas N) |
-| `GET` | `/api/rollup?mode=hour\|day` | Promedios agregados por hora o día |
-| `GET` | `/api/alerts?limit=N` | Historial de alertas |
-| `POST` | `/api/control` | `{ "action": "pause" \| "resume" \| "interval", "value": N }` |
+| Método | Endpoint                     | Descripción                                                       |
+| ------ | ---------------------------- | ----------------------------------------------------------------- |
+| `GET`  | `/api/stats`                 | Estado global: muestras totales, alertas, última métrica, runtime |
+| `GET`  | `/api/series?limit=N`        | Serie temporal de métricas (últimas N)                            |
+| `GET`  | `/api/rollup?mode=hour\|day` | Promedios agregados por hora o día                                |
+| `GET`  | `/api/alerts?limit=N`        | Historial de alertas                                              |
+| `POST` | `/api/control`               | `{ "action": "pause" \| "resume" \| "interval", "value": N }`     |
 
 ---
 
@@ -151,7 +151,7 @@ Resource-Monitor-Studio/
 
 ## Autor
 
-**Luis Adolfo Roces Dapena** · DAM2 — Programación de servicios y procesos
+**Luis Rodriguez cedeño** · DAM2 — Programación de servicios y procesos
 
 ---
 
